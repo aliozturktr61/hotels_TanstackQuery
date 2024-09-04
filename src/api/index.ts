@@ -6,7 +6,7 @@ import { PlaceData } from "../types";
 // base url'e sahip bir axios örneği oluşturduk
 export const api = axios.create({ baseURL: "http://localhost:4001" });
 
-// bütün konaklama yerlerini getiren fonk.
+// bütün konaklama yerlerini getiren fonk. Bu alanda düzeltme yapıldı
 export const getPlaces = (params: Record<string, any>) =>
   api.get("/api/places", { params }).then((res) => res.data.places);
 
